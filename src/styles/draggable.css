@@ -1,0 +1,17 @@
+.box {
+	width: 200px;
+	height: 200px;
+	border: solid;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 5px;
+}
+
+.box-2 {
+	margin-left: 40px;
+}
