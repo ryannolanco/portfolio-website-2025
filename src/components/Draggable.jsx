@@ -36,16 +36,32 @@ function Draggable() {
 			<p>{`bottom: ${position.bottom}`}</p>
 			<p>{`right: ${position.right}`}</p>
 			<ul draggable-list>
-				<li className={`box box-1`} onClick={() => handleDrag('.box-1')}>
+				<li
+					draggable="true"
+					className={`box box-1`}
+					onClick={() => handleDrag('.box-1')}
+				>
 					box-1
 				</li>
-				<li className={`box box-2`} onClick={() => handleDrag('.box-2')}>
+				<li
+					draggable="true"
+					className={`box box-2`}
+					onClick={() => handleDrag('.box-2')}
+				>
 					box-2
 				</li>
-				<li className={`box box-3`} onClick={() => handleDrag('.box-3')}>
+				<li
+					draggable="true"
+					className={`box box-3`}
+					onClick={() => handleDrag('.box-3')}
+				>
 					box-3
 				</li>
-				<li className={`box box-4`} onClick={() => handleDrag('.box-4')}>
+				<li
+					draggable="true"
+					className={`box box-4`}
+					onClick={() => handleDrag('.box-4')}
+				>
 					box-4
 				</li>
 			</ul>
