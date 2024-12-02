@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap");
+
+.heading-primary {
+  color: $color-white;
+
+  &--main {
+    font-family: "kolker brush";
+    font-weight: 300;
+    font-size: 10rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &--secondary {
+    font-family: "Kaisei Tokumin";
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.navigation {
+  color: #BE2B2B;
+  font-size: 3rem;
+
+  & a:visited {
+    color: #BE2B2B;
+  }
+}

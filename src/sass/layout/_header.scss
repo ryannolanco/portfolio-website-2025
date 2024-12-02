@@ -1,0 +1,21 @@
+.header {
+  height: 100vh;
+  background-image: url(../imgs/hero.jpg);
+  background-size: cover;
+  position: relative;
+
+  &__hero {
+    width: 100%;
+  }
+  
+}
+
+
+.heading-primary {
+
+  &__headshot {
+    height: 30rem;
+    border-radius: 1000px;
+  }
+
+}
