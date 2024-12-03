@@ -1,25 +1,26 @@
 .draggable {
-  &__container {
-    max-width: 100%;
-    width: 50rem;
-    height: 50rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-  }
+	&__container {
+		position: absolute;
+		max-width: 100%;
+		width: 50rem;
+		height: 50rem;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 10px;
+	}
 
-  &__box {
-    border: 3px solid #666;
-    background-color: #ddd;
-    border-radius: 0.5em;
-    padding: 10px;
-    cursor: grab;
+	&__box {
+		border: 3px solid #666;
+		background-color: #ddd;
+		border-radius: 0.5em;
+		padding: 10px;
+		cursor: grab;
 
-    &--invisible {
-      border: none;
-      background-color: white;
-      cursor: default;
-    }
-  }
+		&--invisible {
+			border: none;
+			background-color: white;
+			cursor: default;
+		}
+	}
 }

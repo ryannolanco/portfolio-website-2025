@@ -1,12 +1,12 @@
 import React from 'react';
-import Draggable from './components/Draggable';
 import Header from './components/Header';
+import DraggableComponent from './components/DraggableComponent';
 
 function App() {
 	return (
 		<>
 			<Header />
-			<Draggable/>
+			<DraggableComponent />
 		</>
 	);
 }

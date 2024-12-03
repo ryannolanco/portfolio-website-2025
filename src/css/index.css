@@ -55,6 +55,7 @@ body {
 }
 
 .draggable__container {
+  position: absolute;
   max-width: 100%;
   width: 50rem;
   height: 50rem;
