@@ -76,5 +76,8 @@ body {
   background-color: white;
   cursor: default;
 }
+.draggable .grid-draggable {
+  background-color: #666;
+}
 
 /*# sourceMappingURL=index.css.map */
