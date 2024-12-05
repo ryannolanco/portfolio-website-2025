@@ -1,8 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import DraggableComponent from './components/DraggableComponent';
-import 'react-grid-layout/css/styles.css';
-import 'react-resizable/css/styles.css';
+import DraggableComponent from './components/draggable/ComponentDraggable';
 
 function App() {
 	return (

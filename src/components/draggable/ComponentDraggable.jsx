@@ -1,10 +1,10 @@
 import React from 'react';
-import GridDraggable from './GridDraggable';
+import SortableGrid from './SortableGrid';
 
 function DraggableComponent() {
 	return (
-		<div>
-			<GridDraggable />
+		<div style={{ padding: '20px' }}>
+			<SortableGrid />
 		</div>
 	);
 }
