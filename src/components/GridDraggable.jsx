@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import GridLayout from 'react-grid-layout';
+import { DndContext } from '@dnd-kit/core';
+
+import { Draggable } from './Draggable';
+import { Droppable } from './Droppable';
 
 const GridDraggable = () => {
 	const [hovered, setHovered] = useState(false);
@@ -12,32 +15,8 @@ const GridDraggable = () => {
 		setHovered(false);
 	};
 
-	// layout is an array of objects, see the demo for more complete usage
-	const layout = [
-		{ i: 'a', x: 0, y: 0, w: 1, h: 2 },
-		{ i: 'b', x: 1, y: 0, w: 3, h: 2 },
-		{ i: 'c', x: 4, y: 0, w: 1, h: 2 },
-		{ i: 'd', x: 5, y: 0, w: 1, h: 2 },
-	];
-
 	return (
-		<GridLayout
-			className="layout grid-draggable"
-			layout={layout}
-			cols={12}
-			rowHeight={200}
-			width={3000}
-			style={{ backgroundColor: 'green' }}
-		>
-			<div key="a" style={{ backgroundColor: 'red' }}>
-				a
-			</div>
-			<div key="b" style={{ backgroundColor: 'red' }}>
-				b
-			</div>
-			<div key="c" style={{ backgroundColor: 'red' }}>
-				c
-			</div>
+		<div className="draggable__container">
 			<div
 				key="d"
 				style={{
@@ -59,7 +38,7 @@ const GridDraggable = () => {
 					D
 				</div>
 			</div>
-		</GridLayout>
+		</div>
 	);
 };
 
