@@ -1,26 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap");
-.heading-primary {
+.text-container__heading-primary {
   color: white;
 }
-.heading-primary--main {
+.text-container__heading-primary--main {
   font-family: "kolker brush";
   font-weight: 300;
   font-size: 10rem;
   letter-spacing: 0.2rem;
 }
-.heading-primary--secondary {
+.text-container__heading-primary--secondary {
   font-family: "Kaisei Tokumin";
   font-size: 3rem;
   letter-spacing: 0.1rem;
 }
 
 .navigation {
-  color: #BE2B2B;
+  color: #be2b2b;
   font-size: 3rem;
 }
 .navigation a:visited {
-  color: #BE2B2B;
+  color: #be2b2b;
 }
 
 *,
@@ -45,13 +45,34 @@ body {
   background-size: cover;
   position: relative;
 }
-.header__hero {
-  width: 100%;
+
+.navigation__container {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  float: right;
+  padding-right: 10rem;
+  padding-top: 5rem;
 }
 
-.heading-primary__headshot {
-  height: 30rem;
+.text-container {
+  position: relative;
+}
+.text-container__heading-primary--main {
+  position: absolute;
+  right: 0;
+}
+.text-container__heading-primary--secondary {
+  position: absolute;
+  right: 0;
+}
+
+.primary-headshot {
+  height: 40rem;
   border-radius: 1000px;
+  position: absolute;
+  transform: translate(50%, 50%);
+  left: 5%;
 }
 
 .draggable {

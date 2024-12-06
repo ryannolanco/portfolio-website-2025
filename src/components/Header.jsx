@@ -1,39 +1,46 @@
-import React from "react";
+import React from 'react';
 
-import headshot from "../imgs/head-shot.png"
+import headshot from '../imgs/head-shot.png';
 
 function Header() {
-  return (
-    <header className="header">
-      <div className="header__text-container">
-        <nav className="navigation">
-          <div className="navigation__navigation-container">
-            <a href="" className="linkedin-link">
-              linkedin
-            </a>{" "}
-            |&nbsp;
-            <a href="" className="email-link">
-              ryannolanco@gmail.com
-            </a>{" "}
-            |&nbsp;
-            <a href="" className="resume">
-              resume
-            </a>
-          </div>
-        </nav>
+	return (
+		<header className="header">
+			<nav className="navigation">
+				<ul className="navigation__container">
+					<li>
+						<a href="" className="linkedin-link">
+							linkedin
+						</a>
+					</li>
+					<li>
+						&nbsp;|&nbsp;
+						<a href="" className="email-link">
+							ryannolanco@gmail.com
+						</a>
+					</li>
+					<li>
+						&nbsp;|&nbsp;
+						<a href="" className="resume">
+							resume
+						</a>
+					</li>
+				</ul>
+			</nav>
 
-        <h1 className="heading-primary">
-					<img className="heading-primary__headshot"src={headshot} alt="" />
-          <span className="heading-primary--main">Hello, I'm Ryan Nolan</span>
-          <span className="heading-primary--secondary">
-            I love creating and building immersive and innovative projects
-          </span>
-        </h1>
-      </div>
+			<img className="primary-headshot" src={headshot} alt="" />
 
-    </header>
-		
-  );
+			<div className="text-container">
+				<h1 className="text-container__heading-primary">
+					<span className="text-container__heading-primary--main">
+						Hello, I'm Ryan Nolan
+					</span>
+					<span className="text-container__heading-primary--secondary">
+						I love creating and building immersive and innovative projects
+					</span>
+				</h1>
+			</div>
+		</header>
+	);
 }
 
 export default Header;
