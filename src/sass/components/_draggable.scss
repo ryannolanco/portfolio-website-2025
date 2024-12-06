@@ -1,30 +1,33 @@
 .draggable {
-	&__container {
-		position: absolute;
-		max-width: 100%;
-		width: 50rem;
-		height: 50rem;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-template-rows: repeat(3, 1fr);
-		gap: 10px;
-	}
+  width: 300px;
+  height: 300px;
+  background-color: rgb(0, 166, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px; // Optional
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  cursor: grab;
 
-	&__box {
-		border: 3px solid #666;
-		background-color: #ddd;
-		border-radius: 0.5em;
-		padding: 10px;
-		cursor: grab;
+  &:hover {
+    transform: scale(1.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
-		&--invisible {
-			border: none;
-			background-color: white;
-			cursor: default;
-		}
-	}
+  &--img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 
-	.grid-draggable {
-		background-color: #666;
-	}
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  &--invisible {
+    background-color: #f0f0f0;
+    z-index: -1;
+  }
 }
