@@ -1,42 +1,46 @@
 .header {
-	height: 100vh;
-	background-image: url(../imgs/hero.jpg);
-	background-size: cover;
-	position: relative;
+  height: 100vh;
+  background-image: url(../imgs/hero-final.png);
+  background-size: cover;
+  position: relative;
 }
 
 .navigation {
-	&__container {
-		display: flex;
-		flex-direction: row;
-		list-style: none;
-		float: right;
-		padding-right: 10rem;
-		padding-top: 5rem;
-	}
+  &__container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    float: right;
+    padding-right: 10rem;
+    padding-top: 5rem;
+  }
 }
 
 .text-container {
-	position: relative;
+	
+  &__heading-primary {
+		
+    &--main {
+      position: absolute;
+			top: 30%;
+			left: 50%;
+	
+    }
 
-	&__heading-primary {
-		&--main {
-			position: absolute;
-			right: 0;
-		}
-
-		&--secondary {
-			position: absolute;
-			right: 0;
-		}
-	}
+    &--secondary {
+      position: absolute;
+			top: 41%;
+			left: 50.4%;
+			width: 82rem;
+    }
+  }
 }
 
 .primary-headshot {
-	height: 40rem;
-	border-radius: 1000px;
-	position: absolute;
-	transform: translate(50%, 50%);
+  height: 40rem;
+  border-radius: 1000px;
+  position: absolute;
+  transform: translate(50%, 50%);
 
-	left: 5%;
+  left: 5%;
 }

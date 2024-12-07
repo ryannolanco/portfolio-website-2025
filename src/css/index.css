@@ -1,26 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .text-container__heading-primary {
-  color: white;
+  color: #4a9cfa;
 }
 .text-container__heading-primary--main {
-  font-family: "kolker brush";
+  font-family: "Metrophobic";
   font-weight: 300;
-  font-size: 10rem;
-  letter-spacing: 0.2rem;
+  font-size: 8rem;
+  letter-spacing: 0.1rem;
 }
 .text-container__heading-primary--secondary {
   font-family: "Kaisei Tokumin";
-  font-size: 3rem;
-  letter-spacing: 0.1rem;
+  font-size: 3.5rem;
+  letter-spacing: 0.2rem;
 }
 
 .navigation {
-  color: #be2b2b;
+  color: rgba(74, 156, 250, 0.5607843137);
   font-size: 3rem;
 }
+.navigation a {
+  text-decoration: none;
+}
 .navigation a:visited {
-  color: #be2b2b;
+  color: rgba(74, 156, 250, 0.5607843137);
 }
 
 *,
@@ -41,7 +45,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: url(../imgs/hero.jpg);
+  background-image: url(../imgs/hero-final.png);
   background-size: cover;
   position: relative;
 }
@@ -55,16 +59,16 @@ body {
   padding-top: 5rem;
 }
 
-.text-container {
-  position: relative;
-}
 .text-container__heading-primary--main {
   position: absolute;
-  right: 0;
+  top: 30%;
+  left: 50%;
 }
 .text-container__heading-primary--secondary {
   position: absolute;
-  right: 0;
+  top: 41%;
+  left: 50.4%;
+  width: 82rem;
 }
 
 .primary-headshot {
@@ -84,21 +88,18 @@ body {
   align-items: center;
   border: 1px solid black;
   border-radius: 10px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform ease, background-color 0.2s ease;
   cursor: grab;
-}
-.draggable:hover {
-  transform: scale(1.5);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .draggable--img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transition: transform 2s ease, background-color 0.2s ease;
 }
 .draggable--img:hover {
-  transform: scale(1);
+  transform: scale(2);
 }
 .draggable--invisible {
   background-color: #f0f0f0;

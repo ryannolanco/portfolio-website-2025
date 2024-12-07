@@ -27,7 +27,6 @@ function Header() {
 				</ul>
 			</nav>
 
-			<img className="primary-headshot" src={headshot} alt="" />
 
 			<div className="text-container">
 				<h1 className="text-container__heading-primary">
@@ -35,7 +34,8 @@ function Header() {
 						Hello, I'm Ryan Nolan
 					</span>
 					<span className="text-container__heading-primary--secondary">
-						I love creating and building immersive and innovative projects
+						
+					I love creating immersive and innovative digital projects
 					</span>
 				</h1>
 			</div>
