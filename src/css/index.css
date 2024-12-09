@@ -1,30 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Metrophobic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.text-container__heading-primary {
-  color: #4a9cfa;
-}
 .text-container__heading-primary--main {
   font-family: "Metrophobic";
   font-weight: 300;
   font-size: 8rem;
   letter-spacing: 0.1rem;
+  background-image: linear-gradient(to right, #503251, #4F9CCC);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .text-container__heading-primary--secondary {
   font-family: "Kaisei Tokumin";
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
+  background-image: linear-gradient(to right, #503251, #4F9CCC);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.navigation {
-  color: rgba(74, 156, 250, 0.5607843137);
+.navigation__container {
   font-size: 3rem;
+  background-image: linear-gradient(to right, #503251, #4F9CCC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
-.navigation a {
+.navigation__container a {
   text-decoration: none;
+  color: inherit;
 }
-.navigation a:visited {
-  color: rgba(74, 156, 250, 0.5607843137);
+.navigation__container a:visited {
+  all: unset;
 }
 
 *,
