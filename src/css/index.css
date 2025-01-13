@@ -109,12 +109,24 @@ body {
   border-radius: 10px;
   transition: transform 2s ease, background-color 0.2s ease;
 }
-.draggable--img:hover {
-  transform: scale(2);
-}
 .draggable--invisible {
   background-color: #f0f0f0;
   z-index: -1;
+}
+
+.sortable-grid {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, #f8fdf9, #c0cdd2);
+}
+.sortable-grid__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 920px;
+  gap: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /*# sourceMappingURL=index.css.map */

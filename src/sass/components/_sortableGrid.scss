@@ -1,16 +1,15 @@
 .sortable-grid {
-  display: flex;
-  justify-content: center;
-  background-color: #f0f0f0;
-  border-radius: 1000px;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
+	background: linear-gradient(to bottom right, #f8fdf9, #c0cdd2);
 
-  &__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 920px;
-    gap: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    
-  }
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		width: 920px;
+		gap: 10px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 }
