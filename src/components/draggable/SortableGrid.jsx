@@ -11,12 +11,18 @@ import SortableItem from './SortableItem';
 import testImg from '../../imgs/test-img.jpg';
 
 const initialItems = [
-	{ id: 'A', content: 'box a', squareImg: testImg, invisible: false },
-	{ id: 'B', content: 'This is awesome', invisible: false },
-	{ id: 'C', content: 'This is awesome', invisible: false },
-	{ id: 'D', content: 'This is awesome', invisible: false },
-	{ id: 'E', content: '', invisible: true },
-	{ id: 'F', content: '', invisible: true },
+	{
+		id: 'A',
+		content: 'box a',
+		squareImg: testImg,
+		invisible: false,
+		double: false,
+	},
+	{ id: 'B', content: 'This is awesome', invisible: false, double: false },
+	{ id: 'C', content: 'This is awesome', invisible: false, double: false },
+	{ id: 'D', content: 'This should be double', invisible: false, double: true },
+	{ id: 'E', content: '', invisible: true, double: false },
+	{ id: 'F', content: '', invisible: true, double: false },
 ];
 
 function SortableGrid() {
@@ -69,6 +75,7 @@ function SortableGrid() {
 								content={item.content}
 								invisible={item.invisible}
 								squareImg={item.squareImg}
+								double={item.double}
 							/>
 						))}
 					</div>

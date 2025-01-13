@@ -91,8 +91,8 @@ body {
 }
 
 .draggable {
-  width: 300px;
-  height: 300px;
+  max-width: 100%;
+  height: 400px;
   background-color: rgb(0, 166, 221);
   display: flex;
   justify-content: center;
@@ -113,17 +113,23 @@ body {
   background-color: #f0f0f0;
   z-index: -1;
 }
+.draggable--double {
+  grid-column: span 2;
+  background-color: white; /* This makes it span two columns */
+}
 
 .sortable-grid {
+  margin: 50px;
   display: flex;
   justify-content: center;
   border-radius: 10px;
+  margin-top: 40px;
   background: linear-gradient(to bottom right, #f8fdf9, #c0cdd2);
 }
 .sortable-grid__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 920px;
+  width: 1520px;
   gap: 10px;
   padding-top: 100px;
   padding-bottom: 100px;
