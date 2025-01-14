@@ -6,7 +6,10 @@ import {
 	verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 
-import SortableItem from './SortableItem';
+import './sortable.css';
+import './draggable.css';
+
+import DraggableItem from './DraggableItem';
 
 import testImg from '../../imgs/test-img.jpg';
 
@@ -69,7 +72,7 @@ function SortableGrid() {
 				<div className="sortable-grid">
 					<div className="sortable-grid__container">
 						{items.map((item) => (
-							<SortableItem
+							<DraggableItem
 								key={item.id}
 								id={item.id}
 								content={item.content}

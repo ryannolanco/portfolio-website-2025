@@ -1,5 +1,5 @@
 import React from 'react';
-import SortableGrid from './SortableGrid';
+import SortableGrid from '../sortable/SortableGrid';
 
 function DraggableComponent() {
 	return (

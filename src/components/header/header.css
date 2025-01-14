@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* //COLORS
+$color-white: white;
+
+$color-primary:#503251;
+$color-secondary:#4F9CCC;
+ */
+
+.header {
+	height: 100vh;
+	background-image: url(../../imgs/hero-final.png);
+	background-size: cover;
+	position: relative;
+}
+
+.navigation__container {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	float: right;
+	padding-right: 10rem;
+	padding-top: 5rem;
+}
+
+.text-container {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+}
+
+.text-container__heading-primary--secondary {
+	position: absolute;
+	top: 41%;
+	left: 50.4%;
+	width: 82rem;
+}
+
+.text-container__heading-primary--main {
+	font-family: 'Metrophobic';
+	z-index: 10;
+	font-weight: 300;
+	font-size: 8rem;
+	letter-spacing: 0.1rem;
+
+	background-image: linear-gradient(to right, #503251, #4f9ccc);
+
+	display: inline-block;
+
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.text-container__heading-primary--secondary {
+	font-family: 'Kaisei Tokumin';
+	font-size: 3.5rem;
+	letter-spacing: 0.2rem;
+
+	background-image: linear-gradient(to right, #503251, #4f9ccc);
+
+	display: inline-block;
+
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.navigation__container {
+	font-size: 3rem;
+	background-image: linear-gradient(to right, #503251, #4f9ccc);
+
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: inherit;
+}
+.navigation a:visited {
+	all: unset;
+}

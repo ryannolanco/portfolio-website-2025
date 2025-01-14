@@ -4,7 +4,9 @@ import { useState } from 'react';
 
 import { CSS } from '@dnd-kit/utilities';
 
-function SortableItem({ id, content, invisible, squareImg, double }) {
+import './sortable.css';
+
+function DraggableItem({ id, content, invisible, squareImg, double }) {
 	const { attributes, listeners, setNodeRef, transform, transition } =
 		useSortable({ id });
 
@@ -13,7 +15,6 @@ function SortableItem({ id, content, invisible, squareImg, double }) {
 		transition,
 	};
 
-	console.log(transition);
 	// const handleMouseEnter = () => {
 	// 	setIsHovered(true);
 	// };
@@ -25,9 +26,9 @@ function SortableItem({ id, content, invisible, squareImg, double }) {
 	return (
 		<div
 			ref={setNodeRef}
-			className={`draggable ${invisible ? 'draggable--invisible' : ''} ${
-				double ? 'draggable--double' : ''
-			}`}
+			// className={`draggable ${invisible ? 'draggable--invisible' : ''} ${
+			// 	double ? 'draggable--double' : ''
+			// }`}
 			style={dynamicStyles}
 			{...attributes}
 			{...listeners}
@@ -45,4 +46,4 @@ function SortableItem({ id, content, invisible, squareImg, double }) {
 	);
 }
 
-export default SortableItem;
+export default DraggableItem;
