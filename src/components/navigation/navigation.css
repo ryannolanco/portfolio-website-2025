@@ -1,0 +1,37 @@
+.navigation__container {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	float: right;
+	padding-right: 10rem;
+	padding-top: 5rem;
+
+	font-size: 2rem;
+	background-image: linear-gradient(to right, #503251, #4f9ccc);
+
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: inherit;
+}
+.navigation a:visited {
+	all: unset;
+}
+
+@media (max-width: 600px) {
+	.navigation__container {
+		position: fixed;
+		inset: 0 0 0 40%;
+		background: rgb(18, 17, 17);
+	}
+}
+@media (max-width: 768px) {
+	/* Tablets */
+}
+@media (max-width: 1024px) {
+	/* Large tablets/landscape */
+}

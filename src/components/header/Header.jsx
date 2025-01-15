@@ -1,32 +1,12 @@
 import React from 'react';
 
 import './header.css';
+import Navigation from '../navigation/Navigation';
 
 function Header() {
 	return (
 		<header className="header">
-			<nav className="navigation">
-				<ul className="navigation__container">
-					<li>
-						<a href="" className="linkedin-link">
-							linkedin
-						</a>
-					</li>
-					<li>
-						&nbsp;|&nbsp;
-						<a href="" className="email-link">
-							ryannolanco@gmail.com
-						</a>
-					</li>
-					<li>
-						&nbsp;|&nbsp;
-						<a href="" className="resume">
-							resume
-						</a>
-					</li>
-				</ul>
-			</nav>
-
+			<Navigation />
 			{/* <div className="text-container">
 				<h1 className="text-container__heading-primary">
 					<span className="text-container__heading-primary--main">

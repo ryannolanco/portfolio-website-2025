@@ -17,15 +17,6 @@ $color-secondary:#4F9CCC;
 	position: relative;
 }
 
-.navigation__container {
-	display: flex;
-	flex-direction: row;
-	list-style: none;
-	float: right;
-	padding-right: 10rem;
-	padding-top: 5rem;
-}
-
 .text-container__heading-primary--main {
 	position: absolute;
 	top: 30%;
@@ -67,23 +58,6 @@ $color-secondary:#4F9CCC;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
-}
-
-.navigation__container {
-	font-size: 2rem;
-	background-image: linear-gradient(to right, #503251, #4f9ccc);
-
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-}
-
-.navigation a {
-	text-decoration: none;
-	color: inherit;
-}
-.navigation a:visited {
-	all: unset;
 }
 
 /* MEDIA QUERIES */
