@@ -11,6 +11,7 @@ $color-secondary:#4F9CCC;
 
 .header {
 	height: 100vh;
+	width: 100%;
 	background-image: url(../../imgs/hero-final.png);
 	background-size: cover;
 	position: relative;
@@ -25,16 +26,16 @@ $color-secondary:#4F9CCC;
 	padding-top: 5rem;
 }
 
-.text-container {
+.text-container__heading-primary--main {
 	position: absolute;
 	top: 30%;
-	left: 50%;
+	left: 56%;
 }
 
 .text-container__heading-primary--secondary {
 	position: absolute;
-	top: 41%;
-	left: 50.4%;
+	top: 38%;
+	left: 56.4%;
 	width: 82rem;
 }
 
@@ -42,7 +43,7 @@ $color-secondary:#4F9CCC;
 	font-family: 'Metrophobic';
 	z-index: 10;
 	font-weight: 300;
-	font-size: 8rem;
+	font-size: 3rem;
 	letter-spacing: 0.1rem;
 
 	background-image: linear-gradient(to right, #503251, #4f9ccc);
@@ -56,7 +57,7 @@ $color-secondary:#4F9CCC;
 
 .text-container__heading-primary--secondary {
 	font-family: 'Kaisei Tokumin';
-	font-size: 3.5rem;
+	font-size: 1.5rem;
 	letter-spacing: 0.2rem;
 
 	background-image: linear-gradient(to right, #503251, #4f9ccc);
@@ -69,7 +70,7 @@ $color-secondary:#4F9CCC;
 }
 
 .navigation__container {
-	font-size: 3rem;
+	font-size: 2rem;
 	background-image: linear-gradient(to right, #503251, #4f9ccc);
 
 	-webkit-background-clip: text;
@@ -83,4 +84,11 @@ $color-secondary:#4F9CCC;
 }
 .navigation a:visited {
 	all: unset;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+	.header {
+		background-position: center;
+	}
 }

@@ -27,16 +27,17 @@ function Header() {
 				</ul>
 			</nav>
 
-			<div className="text-container">
+			{/* <div className="text-container">
 				<h1 className="text-container__heading-primary">
 					<span className="text-container__heading-primary--main">
 						Hello, I'm Ryan Nolan
 					</span>
 					<span className="text-container__heading-primary--secondary">
-						I love creating immersive and innovative digital projects
+						I love creating immersive <br />
+						and innovative digital projects
 					</span>
 				</h1>
-			</div>
+			</div> */}
 		</header>
 	);
 }
