@@ -1,17 +1,9 @@
 .navigation__container {
 	display: flex;
-	flex-direction: row;
 	list-style: none;
-	float: right;
-	padding-right: 10rem;
-	padding-top: 5rem;
 
-	font-size: 2rem;
-	background-image: linear-gradient(to right, #503251, #4f9ccc);
-
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
+	background: hsl(0 0 0 / 0.1);
+	backdrop-filter: blur(1rem);
 }
 
 .navigation a {
@@ -26,12 +18,25 @@
 	.navigation__container {
 		position: fixed;
 		inset: 0 0 0 40%;
-		background: rgb(18, 17, 17);
+		flex-direction: column;
+		padding: min(30vh, 10rem) 2em;
 	}
 }
 @media (max-width: 768px) {
 	/* Tablets */
 }
-@media (max-width: 1024px) {
-	/* Large tablets/landscape */
+@media (min-width: 1024px) {
+	.navigation__container {
+		flex-direction: row;
+
+		float: right;
+		padding-right: 10rem;
+		padding-top: 5rem;
+		font-size: 2rem;
+		background-image: linear-gradient(to right, #503251, #4f9ccc);
+
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
 }

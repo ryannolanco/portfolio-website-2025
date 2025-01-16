@@ -8,21 +8,19 @@ const Navigation = () => {
 				<li>
 					<a href="" className="linkedin-link">
 						<span aria-hidden="true">00</span>
-						linkedin
+						LINKEDIN
 					</a>
 				</li>
 				<li>
-					&nbsp;|&nbsp;
 					<a href="" className="email-link">
 						<span aria-hidden="true">01</span>
-						ryannolanco@gmail.com
+						GITHUB
 					</a>
 				</li>
 				<li>
-					&nbsp;|&nbsp;
 					<a href="" className="resume">
 						<span aria-hidden="true">02</span>
-						resume
+						RESUME
 					</a>
 				</li>
 			</ul>
