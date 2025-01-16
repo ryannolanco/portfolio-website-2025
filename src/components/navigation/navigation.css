@@ -1,25 +1,32 @@
-.navigation__container {
-	display: flex;
-	list-style: none;
-
-	background: hsl(0 0 0 / 0.1);
-	backdrop-filter: blur(1rem);
-}
-
 .navigation a {
 	text-decoration: none;
 	color: inherit;
 }
+
 .navigation a:visited {
 	all: unset;
 }
 
+.navigation__container {
+	display: flex;
+	list-style: none;
+	background: hsl(0 0 0 / 0.1);
+	backdrop-filter: blur(1rem);
+}
+
 @media (max-width: 600px) {
 	.navigation__container {
+		gap: 2rem;
+		font-size: 1.5rem;
+
 		position: fixed;
 		inset: 0 0 0 40%;
 		flex-direction: column;
 		padding: min(30vh, 10rem) 2em;
+	}
+
+	.nav-span {
+		margin-right: 1rem;
 	}
 }
 @media (max-width: 768px) {

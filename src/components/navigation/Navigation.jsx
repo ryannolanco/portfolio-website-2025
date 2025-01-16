@@ -7,19 +7,25 @@ const Navigation = () => {
 			<ul className="navigation__container">
 				<li>
 					<a href="" className="linkedin-link">
-						<span aria-hidden="true">00</span>
+						<span className="nav-span" aria-hidden="true">
+							00
+						</span>
 						LINKEDIN
 					</a>
 				</li>
 				<li>
 					<a href="" className="email-link">
-						<span aria-hidden="true">01</span>
+						<span className="nav-span" aria-hidden="true">
+							01
+						</span>
 						GITHUB
 					</a>
 				</li>
 				<li>
 					<a href="" className="resume">
-						<span aria-hidden="true">02</span>
+						<span className="nav-span" aria-hidden="true">
+							02
+						</span>
 						RESUME
 					</a>
 				</li>
