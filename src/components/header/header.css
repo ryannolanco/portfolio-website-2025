@@ -22,23 +22,13 @@ $color-secondary:#4F9CCC;
 
 .text-container__heading-primary--main {
 	position: absolute;
-	top: 30%;
-	left: 56%;
-}
+	top: 0%;
+	left: 5%;
 
-.text-container__heading-primary--secondary {
-	position: absolute;
-	top: 38%;
-	left: 56.4%;
-	width: 82rem;
-}
-
-.text-container__heading-primary--main {
 	font-family: 'Metrophobic';
-	z-index: 10;
 	font-weight: 300;
-	font-size: 3rem;
-	letter-spacing: 0.1rem;
+	font-size: 9.8rem;
+	letter-spacing: 0rem;
 
 	background-image: linear-gradient(to right, #503251, #4f9ccc);
 
@@ -46,12 +36,17 @@ $color-secondary:#4F9CCC;
 
 	background-clip: text;
 	-webkit-background-clip: text;
-	color: transparent;
+	/* color: transparent; */
+	color: white;
 }
 
 .text-container__heading-primary--secondary {
+	position: absolute;
+	top: 80%;
+	left: 5%;
+	
 	font-family: 'Kaisei Tokumin';
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	letter-spacing: 0.2rem;
 
 	background-image: linear-gradient(to right, #503251, #4f9ccc);
