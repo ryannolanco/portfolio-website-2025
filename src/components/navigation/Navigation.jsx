@@ -8,11 +8,26 @@ const Navigation = () => {
 				className="mobile-nav-toggle"
 				aria-controls="primary-navigation"
 				aria-expanded="false"
+				onClick={() => {
+					const nav = document.getElementById('primary-navigation'); // Access the <ul> element
+					const visibility = nav.getAttribute('data-visible');
+
+					if (visibility === 'false') {
+						nav.setAttribute('data-visible', 'true');
+					} else {
+						nav.setAttribute('data-visible', 'false');
+					}
+					console.log(visibility);
+				}}
 			>
 				<span className="sr-only">Menu</span>
 			</button>
 			<nav className="navigation">
-				<ul id="primary-navigation" className="navigation__container">
+				<ul
+					data-visible="false"
+					id="primary-navigation"
+					className="primary-navigation"
+				>
 					<li>
 						<a href="" className="linkedin-link">
 							<span className="nav-span" aria-hidden="true">
