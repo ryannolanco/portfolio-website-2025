@@ -16,16 +16,21 @@ import testImg from '../../imgs/test-img.jpg';
 const initialItems = [
 	{
 		id: 'A',
-		content: 'box a',
-		squareImg: testImg,
+		content: 'Video1',
 		invisible: false,
 		double: false,
 	},
+	{ id: 'E', content: 'About', invisible: false, double: true },
 	{ id: 'B', content: 'This is awesome', invisible: false, double: false },
-	{ id: 'C', content: 'This is awesome', invisible: false, double: false },
-	{ id: 'D', content: 'This should be double', invisible: false, double: true },
-	{ id: 'E', content: '', invisible: true, double: false },
-	{ id: 'F', content: '', invisible: true, double: false },
+	{
+		id: 'C',
+		content: <a href="#">This is awesome</a>,
+		invisible: false,
+		double: false,
+	},
+	{ id: 'F', content: 'This is awesome', invisible: false, double: false },
+	{ id: 'G', content: 'Skills', invisible: false, double: true },
+	{ id: 'D', content: 'Video2', invisible: false, double: false },
 ];
 
 function SortableGrid() {

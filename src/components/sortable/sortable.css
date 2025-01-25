@@ -9,8 +9,8 @@
 }
 
 .sortable-grid__container {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	gap: 1rem;
 }
 
@@ -34,6 +34,7 @@
 
 	.sortable-grid__container {
 		display: grid;
+		max-height: max-content;
 		grid-template-columns: repeat(3, 1fr);
 		width: 1520px;
 		gap: 10px;
