@@ -64,6 +64,7 @@ function SortableGrid() {
 			collisionDetection={closestCenter}
 			onDragOver={handleDragOver}
 			onDragEnd={handleDragEnd}
+			className="dnd-context"
 		>
 			<SortableContext
 				items={items}

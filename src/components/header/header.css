@@ -37,7 +37,7 @@ $color-secondary:#4F9CCC;
 	background-clip: text;
 	-webkit-background-clip: text;
 	/* color: transparent; */
-	color: white;
+	color: rgb(0, 0, 0);
 }
 
 .text-container__heading-primary--secondary {
