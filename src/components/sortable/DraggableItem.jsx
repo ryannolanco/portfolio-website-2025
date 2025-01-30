@@ -26,7 +26,7 @@ function DraggableItem({ id, content, invisible, squareImg, double }) {
 	return (
 		<div
 			ref={setNodeRef}
-			className={`draggable ${invisible ? 'draggable--invisible' : ''} ${
+			className={`${id} draggable ${invisible ? 'draggable--invisible' : ''} ${
 				double ? 'draggable--double' : ''
 			}`}
 			style={dynamicStyles}

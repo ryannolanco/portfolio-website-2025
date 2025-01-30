@@ -10,31 +10,10 @@ import './sortable.css';
 import './draggable.css';
 
 import DraggableItem from './DraggableItem';
-
-import testImg from '../../imgs/test-img.jpg';
-
-const initialItems = [
-	{
-		id: 'A',
-		content: 'Video1',
-		invisible: false,
-		double: false,
-	},
-	{ id: 'E', content: 'About', invisible: false, double: true },
-	{ id: 'B', content: 'This is awesome', invisible: false, double: false },
-	{
-		id: 'C',
-		content: <a href="#">This is awesome</a>,
-		invisible: false,
-		double: false,
-	},
-	{ id: 'F', content: 'This is awesome', invisible: false, double: false },
-	{ id: 'G', content: 'Skills', invisible: false, double: true },
-	{ id: 'D', content: 'Video2', invisible: false, double: false },
-];
+import draggableItems from './draggable-items-array';
 
 function SortableGrid() {
-	const [items, setItems] = useState(initialItems);
+	const [items, setItems] = useState(draggableItems);
 
 	const handleDragOver = (event) => {
 		const { active, over } = event;
