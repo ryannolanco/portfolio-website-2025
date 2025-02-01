@@ -5,23 +5,18 @@ import ProjectCollection from '../projects/ProjectCollection';
 
 const initialItems = [
 	{
-		id: 'A',
-		content: 'Video1',
-		invisible: false,
-		double: false,
-	},
-	{
 		id: 'about-draggable',
 		content: <About />,
 		invisible: false,
 		double: true,
 	},
 	{
-		id: 'B',
-		content: 'This is awesome',
+		id: 'A',
+		content: 'Video1',
 		invisible: false,
 		double: false,
 	},
+
 	{
 		id: 'projects-collection-draggable',
 		content: <ProjectCollection />,
@@ -29,10 +24,10 @@ const initialItems = [
 		double: false,
 	},
 	{
-		id: 'G',
-		content: 'Certifications',
+		id: 'B',
+		content: 'Photo?',
 		invisible: false,
-		double: true,
+		double: false,
 	},
 	{
 		id: 'next-steps-draggable',
@@ -40,6 +35,13 @@ const initialItems = [
 		invisible: false,
 		double: true,
 	},
+	{
+		id: 'G',
+		content: 'Certifications',
+		invisible: false,
+		double: true,
+	},
+
 	{ id: 'D', content: 'Video2', invisible: false, double: false },
 ];
 

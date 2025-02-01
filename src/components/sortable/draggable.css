@@ -5,6 +5,10 @@
 	justify-content: center;
 	align-items: center;
 	grid-column: span 1;
+	border-radius: 1rem;
+	/* background: linear-gradient(to bottom right, #bee0f2, #e0cdee); */
+	background-color: rgb(255, 255, 255);
+
 }
 
 .draggable--img {
@@ -22,8 +26,13 @@
 
 /* INDIVIDUAL ITEM STYLING*/
 
-.about-draggable {
-	background-color: white;
+.about-draggable, .next-steps-draggable {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.1rem;
+	padding: 5px;
+	background-color: transparent;
 }
 
 .projects-collection-draggable {
