@@ -76,16 +76,19 @@
 @media (min-width: 1024px) {
 	.primary-navigation {
 		flex-direction: row;
-
+		gap: 2rem;
 		float: right;
-		padding-right: 10rem;
-		padding-top: 5rem;
-		font-size: 2rem;
-		background-image: linear-gradient(to right, #503251, #4f9ccc);
+		padding-right: 4.8rem;
+		padding-top: 3rem;
+		font-size: 1.5rem;
+		background-image: linear-gradient(to right, #ececec, #4f9ccc);
 
 		-webkit-background-clip: text;
 		background-clip: text;
 		color: transparent;
+
+		-webkit-text-stroke-width: 0.5px;
+		-webkit-text-stroke-color: rgb(13, 12, 12);
 	}
 
 	.mobile-nav-toggle {

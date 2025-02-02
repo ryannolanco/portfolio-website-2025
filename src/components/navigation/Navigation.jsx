@@ -42,26 +42,22 @@ const Navigation = () => {
 				>
 					<li>
 						<a href="" className="linkedin-link">
-							<span className="nav-span" aria-hidden="true">
-								00
-							</span>
 							LINKEDIN
 						</a>
 					</li>
 					<li>
 						<a href="" className="email-link">
-							<span className="nav-span" aria-hidden="true">
-								01
-							</span>
 							GITHUB
 						</a>
 					</li>
 					<li>
 						<a href="" className="resume">
-							<span className="nav-span" aria-hidden="true">
-								02
-							</span>
 							RESUME
+						</a>
+					</li>
+					<li>
+						<a href="" className="projects">
+							PROJECTS
 						</a>
 					</li>
 				</ul>

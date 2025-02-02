@@ -17,36 +17,40 @@ $color-secondary:#4F9CCC;
 
 	position: relative;
 
-	background-position: 20%;
+	background-position: 112%;
 }
 
-.text-container__heading-primary--main {
+.heading-primary--main {
 	position: absolute;
-	top: 2%;
-	left: 5%;
+	top: 7%;
+	left: 0%;
+	padding-left: 2px;
 
 	font-family: 'Metrophobic';
 	font-weight: 300;
-	font-size: 9.8rem;
+	font-size: 10rem;
 	letter-spacing: 0rem;
+	line-height: 100%;
 
-	background-image: linear-gradient(to right, #503251, #4f9ccc);
+	background-image: linear-gradient(to right, #ececec, #4f9ccc);
 
 	display: inline-block;
 
 	background-clip: text;
 	-webkit-background-clip: text;
-	/* color: transparent; */
-	color: rgb(0, 0, 0);
+	color: transparent;
+
+	text-shadow: 1px 1px 2px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgb(13, 12, 12);
 }
 
-.text-container__heading-primary--secondary {
+.heading-primary--secondary {
 	position: absolute;
-	top: 75%;
-	left: 8%;
-
+	top: 70%;
+	padding-left: 5%;
 	font-family: 'Kaisei Tokumin';
-	font-size: 2.5rem;
+	font-size: 2rem;
 	letter-spacing: 0.2rem;
 
 	background-image: linear-gradient(to right, #503251, #4f9ccc);
@@ -56,6 +60,7 @@ $color-secondary:#4F9CCC;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
+	text-shadow: 1px 1px 2px;
 }
 
 /* MEDIA QUERIES */
@@ -74,5 +79,18 @@ $color-secondary:#4F9CCC;
 	.header {
 		background-position: center;
 		background-size: cover;
+	}
+
+	.heading-primary--main {
+		font-size: 7.3rem;
+		left: 50%;
+		top: 20%;
+	}
+
+	.heading-primary--secondary {
+		left: 45.8%;
+		top: 50%;
+		font-size: 2rem;
+		padding-right: 2rem;
 	}
 }
