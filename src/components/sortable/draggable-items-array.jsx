@@ -8,7 +8,7 @@ const initialItems = [
 		id: 'about-draggable',
 		content: <About />,
 		invisible: false,
-		double: true,
+		double: false,
 	},
 	{
 		id: 'A',
@@ -33,13 +33,13 @@ const initialItems = [
 		id: 'next-steps-draggable',
 		content: <NextSteps />,
 		invisible: false,
-		double: true,
+		double: false,
 	},
 	{
 		id: 'G',
 		content: 'Certifications',
 		invisible: false,
-		double: true,
+		double: false,
 	},
 
 	{ id: 'D', content: 'Video2', invisible: false, double: false },

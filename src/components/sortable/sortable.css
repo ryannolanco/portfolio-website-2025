@@ -1,19 +1,18 @@
 /* sortable grid and container styling */
 .dnd-context {
-  padding: 0;
+	padding: 0;
 }
 
 .sortable-grid {
-  margin-top: 0;
-  background: linear-gradient(to bottom right, #ccf0e9, #c8a3ee);
-  padding: 1rem;
-
+	margin-top: 0;
+	background: linear-gradient(to bottom right, #ccf0e9, #c8a3ee);
+	padding: 1rem;
 }
 
 .sortable-grid__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -23,24 +22,24 @@
 }
 
 @media (min-width: 1200px) {
-  .sortable-grid {
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    margin-top: 40px;
-    background: linear-gradient(to bottom right, #f8fdf9, #c0cdd2);
-  }
+	.sortable-grid {
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		border-radius: 10px;
+		margin-top: 40px;
+		background: linear-gradient(to bottom right, #f8fdf9, #c0cdd2);
+	}
 
-  .sortable-grid__container {
-    display: grid;
-    max-height: max-content;
-    grid-template-columns: repeat(3, 1fr);
-    width: 1520px;
-    gap: 10px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+	.sortable-grid__container {
+		display: grid;
+		max-height: max-content;
+		grid-template-columns: repeat(3, 1fr);
+		width: 1000px;
+		gap: 10px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 }

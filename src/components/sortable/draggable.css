@@ -8,7 +8,6 @@
 	border-radius: 1rem;
 	/* background: linear-gradient(to bottom right, #bee0f2, #e0cdee); */
 	background-color: rgb(255, 255, 255);
-
 }
 
 .draggable--img {
@@ -26,7 +25,8 @@
 
 /* INDIVIDUAL ITEM STYLING*/
 
-.about-draggable, .next-steps-draggable {
+.about-draggable,
+.next-steps-draggable {
 	display: flex;
 	justify-content: center;
 	text-align: center;
@@ -48,7 +48,7 @@
 @media (min-width: 1200px) {
 	.draggable {
 		max-width: 100%;
-		height: 400px;
+		height: 300px;
 		background-color: rgb(0, 166, 221);
 		display: flex;
 		justify-content: center;
