@@ -2,6 +2,7 @@ import testImg from '../../imgs/test-img.jpg';
 import About from '../draggable components/about/About';
 import NextSteps from '../draggable components/next steps/NextSteps';
 import ProjectCollection from '../projects/ProjectCollection';
+import placeholder from '../../assets/placeholder.jpg';
 
 const initialItems = [
 	{
@@ -19,13 +20,13 @@ const initialItems = [
 
 	{
 		id: 'projects-collection-draggable',
-		content: <ProjectCollection />,
+		content: 'Projects?',
 		invisible: false,
 		double: false,
 	},
 	{
-		id: 'B',
-		content: 'Photo?',
+		id: 'B draggable--img',
+		content: <img src={placeholder} />,
 		invisible: false,
 		double: false,
 	},
