@@ -26,7 +26,7 @@ const initialItems = [
 	},
 	{
 		id: 'B draggable--img',
-		content: <img src={placeholder} />,
+		content: 'omg?',
 		invisible: false,
 		double: false,
 	},
